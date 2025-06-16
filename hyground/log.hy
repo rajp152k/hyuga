@@ -3,8 +3,8 @@
 (import os.path)
 (import tempfile)
 
-(setv logger (logging.getLogger "hyuga"))
-(let [handler (logging.FileHandler :filename (os.path.join (tempfile.gettempdir) "hyuga.log"))]
+(setv logger (logging.getLogger "hyground"))
+(let [handler (logging.FileHandler :filename (os.path.join (tempfile.gettempdir) "hyground.log"))]
   (.setLevel logger logging.DEBUG)
   (.setFormatter handler (logging.Formatter "%(levelname)-9s %(asctime)s [%(name)s] %(message)s"))
   (logger.addHandler handler))

@@ -2,4 +2,4 @@
 
 (defn get-version
   []
-  (. (pkg-resources.get-distribution "hyuga") version))
+  (. (pkg-resources.get-distribution "hyground") version))

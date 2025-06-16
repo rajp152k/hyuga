@@ -3,7 +3,7 @@
 
 (import toolz.itertoolz *)
 
-(import hyuga.sym.helper *)
+(import hyground.sym.helper *)
 
 (import builtins)
 (import keyword)
@@ -13,7 +13,7 @@
 (defn not-exclude-sym?
   [sym-hy/val]
   (and (not (.startswith (first sym-hy/val) "_hy-"))
-       (!= (first sym-hy/val) "-hyuga-eval-form")))
+       (!= (first sym-hy/val) "-hyground-eval-form")))
 
 (defn not-in-$SYM?
   [mod scope uri sym-hy/val]

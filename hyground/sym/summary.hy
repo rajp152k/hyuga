@@ -5,8 +5,8 @@
 (import hy.models [Expression List String])
 (import toolz.itertoolz *)
 
-(import hyuga.log *)
-(import hyuga.sym.helper *)
+(import hyground.log *)
+(import hyground.sym.helper *)
 
 (defn get-defn-summary
   [form]

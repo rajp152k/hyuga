@@ -10,13 +10,13 @@
                           CompletionOptions])
 (import pygls.server [LanguageServer])
 
-(import hyuga.api *)
-(import hyuga.version [get-version])
-(import hyuga.sym.loader [load-src!])
-(import hyuga.cursor *)
-(import hyuga.lspspec *)
-(import hyuga.log [logger])
-(import hyuga.version [get-version])
+(import hyground.api *)
+(import hyground.version [get-version])
+(import hyground.sym.loader [load-src!])
+(import hyground.cursor *)
+(import hyground.lspspec *)
+(import hyground.log [logger])
+(import hyground.version [get-version])
 
 (setv $SERVER (LanguageServer :name __package__ :version (get-version)))
 
@@ -113,5 +113,5 @@
 
 (defn start
   []
-  (logger.info f"----- hyuga {(get-version)} start -----")
+  (logger.info f"----- hyground {(get-version)} start -----")
   ($SERVER.start_io))

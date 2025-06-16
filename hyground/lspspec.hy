@@ -16,16 +16,16 @@
                           MarkupKind])
 (import re)
 
-(import hyuga.log *)
-(import hyuga.api *)
-(import hyuga.sym.helper *)
+(import hyground.log *)
+(import hyground.api *)
+(import hyground.sym.helper *)
 
 (defn fix-dummy
   [docs [local? True]]
   "test"
   (if local?
-    (.replace docs "hyuga.sym.dummy" "local")
-    (.replace docs "hyuga.sym.dummy" "")))
+    (.replace docs "hyground.sym.dummy" "local")
+    (.replace docs "hyground.sym.dummy" "")))
 
 (defn decide-kind-by-summary
   [summary]

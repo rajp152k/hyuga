@@ -1,7 +1,7 @@
 (require hyrule * :readers *)
 
-(import hyuga.log *)
-(import hyuga.sym.helper *)
+(import hyground.log *)
+(import hyground.sym.helper *)
 
 (defn -get-macro-doc
   [sym-hy symtype]

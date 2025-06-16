@@ -1,6 +1,6 @@
 (require hyrule * :readers *)
 (import hyrule.collections [assoc])
-(import hyuga.log *)
+(import hyground.log *)
 (require hyrule.argmove [-> ->>])
 
 (import toolz.itertoolz *)

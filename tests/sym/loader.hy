@@ -3,7 +3,7 @@
 (import pytest)
 (import toolz.itertoolz [first])
 
-(import hyuga.sym.loader *)
+(import hyground.sym.loader *)
 
 (import fixture [fixture-syms])
 (import misc *)

@@ -15,14 +15,14 @@
 (import pkgutil [iter_modules get_loader])
 (import types [ModuleType])
 
-(import hyuga.log [logger])
-(import hyuga.sym.helper *)
-(import hyuga.sym.dummy)
-(import hyuga.sym.summary [get-form-summary])
-(import hyuga.sym.doc [create-docs])
-(import hyuga.sym.filter [filter-add-targets
+(import hyground.log [logger])
+(import hyground.sym.helper *)
+(import hyground.sym.dummy)
+(import hyground.sym.summary [get-form-summary])
+(import hyground.sym.doc [create-docs])
+(import hyground.sym.filter [filter-add-targets
                           filter-not-reserved])
-(import hyuga.uri.helper [remove-uri-prefix get-venv])
+(import hyground.uri.helper [remove-uri-prefix get-venv])
 
 (import builtins)
 
@@ -79,10 +79,10 @@
     False))
 
 (defn eval-in!
-  [form [doc-uri "file:///dummy"] [ns "hyuga.sym.dummy"]]
+  [form [doc-uri "file:///dummy"] [ns "hyground.sym.dummy"]]
   (let [result
         (hy.eval form
-                 :locals hyuga.sym.dummy.__dict__)]
+                 :locals hyground.sym.dummy.__dict__)]
     result))
 
 (defn load-hy-src!
@@ -149,7 +149,7 @@
   (logger.debug f"load-import!: summary={summary}, ns={ns}, root-uri={root-uri}, doc-uri={doc-uri}, recur?={recur?}")
   (-> f"(import {(:name summary)})"
       (hy.read)
-      (eval-in! doc-uri "hyuga.sym.dummy"))
+      (eval-in! doc-uri "hyground.sym.dummy"))
   (let [fname (hy-src? summary doc-uri)]
     (if fname
       (load-hy-src! form fname root-uri)
@@ -281,7 +281,7 @@
   (load-sym!
     "(sysenv)"
     (->> modules .items
-         (filter #%(and (not (.startswith (first %1) "hyuga.sym.dummy"))
+         (filter #%(and (not (.startswith (first %1) "hyground.sym.dummy"))
                         (not (in f"(venv)\\{%1}" (->> ($GLOBAL.get-$SYMS) .keys)))
                         (not (.startswith (first %1) "_")))))))
 

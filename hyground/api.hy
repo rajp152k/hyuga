@@ -5,10 +5,10 @@
 (import toolz.itertoolz *)
 (import functools [partial])
 
-(import hyuga.log [logger])
-(import hyuga.global [$GLOBAL])
-(import hyuga.sym.loader *)
-(import hyuga.sym.helper *)
+(import hyground.log [logger])
+(import hyground.global [$GLOBAL])
+(import hyground.sym.loader *)
+(import hyground.sym.helper *)
 
 (defn parse-src!
   [src root-uri doc-uri]

@@ -5,7 +5,7 @@
 (import subprocess)
 (import shutil [which])
 (import toolz.itertoolz *)
-(import hyuga.log [logger])
+(import hyground.log [logger])
 
 (defn remove-uri-prefix
   [uri]

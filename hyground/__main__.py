@@ -6,7 +6,7 @@ from .version import get_version
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.description = 'hyuga - Yet another hy language server'
+    parser.description = 'HyGround - (yet another (yet another)) hy language server'
 
     parser.add_argument(
         '--version', action='store_true',

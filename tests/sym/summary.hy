@@ -1,6 +1,6 @@
 (import pytest)
 
-(import hyuga.sym.summary *)
+(import hyground.sym.summary *)
 (import fixture [fixture-syms])
 
 (defn [(pytest.mark.parametrize

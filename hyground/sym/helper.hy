@@ -6,8 +6,8 @@
 (import inspect [getmodulename])
 (import toolz.itertoolz *)
 
-(import hyuga.log *)
-(import hyuga.global [$GLOBAL])
+(import hyground.log *)
+(import hyground.global [$GLOBAL])
 
 (defn uri->mod
   [root-uri doc-uri]

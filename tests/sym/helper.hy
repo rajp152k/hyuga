@@ -3,9 +3,9 @@
 (import pytest)
 (import toolz.itertoolz [first])
 
-(import hyuga.global [$GLOBAL])
-(import hyuga.sym.doc [create-docs])
-(import hyuga.sym.helper *)
+(import hyground.global [$GLOBAL])
+(import hyground.sym.doc [create-docs])
+(import hyground.sym.helper *)
 (import fixture [fixture-syms])
 (import misc *)
 
@@ -65,7 +65,7 @@
 ;         [#(#("mesa" "ti") "mesa")
 ;          #(#("mesa" "") "mesa")
 ;          #(#("mesa") "")
-;          #(#("hyuga" "sym" "helper") "hyuga.sym")])]
+;          #(#("hyground" "sym" "helper") "hyground.sym")])]
 ;  test_module-or-class
 ;  [symsplitted expected]
 ;  (assert (= (module-or-class? symsplitted) expected)))

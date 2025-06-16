@@ -4,9 +4,9 @@
 (import toolz.itertoolz [first])
 (import toolz)
 
-(import hyuga.api *)
+(import hyground.api *)
 
-(import hyuga.sym.filter *)
+(import hyground.sym.filter *)
 (import fixture [fixture-syms])
 (import misc *)
 
@@ -17,7 +17,7 @@
           #(["toolz" None] True)
           #(["_hy-let" None] False)
           #(["_hy-anon" None] False)
-          #(["-hyuga-eval-form" None] False)])]
+          #(["-hyground-eval-form" None] False)])]
   test_not-exclude-sym
   [val expected fixture-syms]
   (assert (= (not-exclude-sym? val) expected)))
