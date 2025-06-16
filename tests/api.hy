@@ -3,7 +3,7 @@
 (import pytest)
 (import os)
 
-(import hyuga.api *)
+(import hyground.api *)
 (import fixture [fixture-syms])
 (import misc *)
 

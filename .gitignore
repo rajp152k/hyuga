@@ -3,11 +3,11 @@
 /*.log
 __pycache__
 
-/hyuga.egg-info
-!/hyuga/__init__.py
-!/hyuga/__main__.py
-/hyuga/*.c
-/hyuga/*.so
+/hyground.egg-info
+!/hyground/__init__.py
+!/hyground/__main__.py
+/hyground/*.c
+/hyground/*.so
 
 **/*.orig
 images/

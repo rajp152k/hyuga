@@ -39,7 +39,7 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/64/c4/c32f8ea8a72debcdd176441b45d0163dfaf3d7a2f6c223fd3742d4d1a9fe/hyrule-1.0.0.tar.gz", hash = "sha256:499c858d736cead8555a129b6a361e958d03a1162aadc09071d28c342e6de8e8", size = 33292, upload-time = "2025-03-19T17:22:52.018Z" }
 
 [[package]]
-name = "hyuga-hyground"
+name = "hyground-hyground"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

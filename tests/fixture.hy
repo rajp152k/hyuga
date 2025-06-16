@@ -1,6 +1,6 @@
 (import pytest)
 
-(import hyuga.api [parse-src!])
+(import hyground.api [parse-src!])
 
 (setv SRC "
       (import toolz.itertoolz *)

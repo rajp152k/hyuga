@@ -12,7 +12,7 @@
                           CompletionItem])
 
 (import misc *)
-(import hyuga.lspspec *)
+(import hyground.lspspec *)
 (import fixture [fixture-syms])
 
 (setv test-completion-item
@@ -155,12 +155,12 @@
                           :character (-> #(1 1) second dec)) 
         obj-range (Range :start obj-pos 
                          :end obj-pos)] 
-    (Location :uri "file:///home/cdfig/projects/hy/hyuga/tests/misc.hy"  
+    (Location :uri "file:///home/cdfig/projects/hy/hyground/tests/misc.hy"
               :range obj-range)))
 
 (defn [(pytest.mark.parametrize
         #("pos" "uri" "expected")
-        [#(#(1 1) "file:///home/cdfig/projects/hy/hyuga/tests/misc.hy" 
+        [#(#(1 1) "file:///home/cdfig/projects/hy/hyground/tests/misc.hy"
            test-location)])]
   test_create-location
   [pos uri expected]
@@ -182,7 +182,7 @@
          #("symvals" "expected")
          [#([["docs-str"
               {"pos" #(1 1)
-               "uri" "file:///home/cdfig/projects/hy/hyuga/tests/misc.hy"}]]
+               "uri" "file:///home/cdfig/projects/hy/hyground/tests/misc.hy"}]]
             [test-location])])]
   test_create-location-list
   [symvals expected fixture-syms]

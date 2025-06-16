@@ -1,5 +1,5 @@
 [project]
-name = "hyuga-hyground"
+name = "hyground-hyground"
 version = "0.1.0"
 description = "(Yet Another (Yet Another)) Hy Language Server"
 readme = "README.md"
