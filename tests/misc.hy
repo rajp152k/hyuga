@@ -1,6 +1,6 @@
 (require hyrule * :readers *)
 
-(import hyuga.sym.helper [sym-py->hy])
+(import hyground.sym.helper [sym-py->hy])
 
 (defn docs-str
   [sym scope]
