@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "hyuga"
-version = "1.0.0"
-description = "Hyuga - Yet Another Hy Language Server"
-authors = ["Yuuta Sakurai <sakurai.yuta@gmail.com>"]
+name = "HyGround"
+version = "0.0.1"
+description = "HyGround - (Yet Another (Yet Another)) Hy Language Server"
+authors = ["Raj Patil <rajp152k@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 include = []
